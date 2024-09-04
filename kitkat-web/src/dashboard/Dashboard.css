@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box;
+ 
+}
+.sidemain{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.main{
+ background-color: whitesmoke;
+  padding: 10px;
+}
+.firstmain{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  
+
+}
+.secondmain{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.employee{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 10px 15px 10px;
+  border: 0.5px solid rgba(177, 176, 176, 0.731);
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  width: 220px;
+  gap: 35px;
+  text-decoration: none;
+}
+
+.emp{
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+}
+.usericon{
+  color:white;
+  background-color:  rgba(7, 95, 236, 0.744);
+  font-size: 1.5rem;
+}
+.thirdmain{
+  border: 0.5px solid rgba(177, 176, 176, 0.731);
+  border-radius: 8px;
+  height: 57vh;
+  justify-content: center;
+  padding: 0%;
+display: grid;
+}
+.forthmain{
+  padding: 0%;
+  border: 0.5px solid rgba(177, 176, 176, 0.731);
+  border-radius: 8px;
+  height: 57vh;
+}
+.select{
+  width: 80px;
+}
+/* .react-calendar__month-view__weekdays {
+  color: gray;
+}
+
+.react-calendar__navigation button {
+  font-size: 1rem;
+} */
+.react-calendar { 
+  padding: 5px;
+  width: 100%;
+  background-color: white;
+  color: rgb(41, 38, 38);
+  border-radius: 6px;
+  /* box-shadow: 0 10px 22px rgba(112, 78, 3, 0.2); */
+  font-family: Arial, Helvetica, sans-serif;
+  /* line-height: 1.12em; */
+  border: none;
+ }
+ .react-calendar__navigation button {
+  /* color: #645c03; */
+  min-width:47px;
+  font-size: 16px;
+  background: none;
+  padding: 5px;
+  margin-top: 10px;
+ }
+ .react-calendar__navigation button:enabled:hover,
+ .react-calendar__navigation button:enabled:focus {
+  background-color: #f8f8fa;
+ }
+ .react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+ }
+ abbr[title] {
+  text-decoration: none;
+ }
+ .react-calendar__month-view__days__day--weekend {
+  color: #d70303;
+ }
+ .react-calendar__tile:enabled:hover,
+ .react-calendar__tile:enabled:focus {
+  background: #f8f8fa;
+  color:  rgba(7, 95, 236, 0.744);
+  border-radius: 6px;
+ }
+ .react-calendar__tile--now {
+  background:  rgba(7, 95, 236, 0.744);
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+ }
+ .react-calendar__tile--now:enabled:hover,
+ .react-calendar__tile--now:enabled:focus {
+  background:  rgba(7, 95, 236, 0.744);
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+ }
+ .react-calendar__tile--hasActive:enabled:hover,
+ .react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+ }
+ .react-calendar__tile--active {
+  background:rgba(7, 95, 236, 0.744);
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+ }
+ .react-calendar__tile--active:enabled:hover,
+ .react-calendar__tile--active:enabled:focus {
+  background: rgba(7, 95, 236, 0.744);
+  color: white;
+ }
+ .react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #f8f8fa;
+ }
+ .react-calendar__tile--range {
+  background: #f8f8fa;
+  color:    rgba(7, 95, 236, 0.744);
+
+  border-radius: 0;
+ }
+ .react-calendar__tile--rangeStart {
+  /* border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px; */
+  background:  rgba(7, 95, 236, 0.744);
+  color: white;
+ }
+ .react-calendar__tile--rangeEnd {
+  /* border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px; */
+  background:  rgba(7, 95, 236, 0.744);
+  color: white;
+ }
+
+.number{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* width:100%; */
+}
+.num{
+ font-weight: 500;
+ /* width: 100%; */
+}
+.not{
+  color: rgb(176, 176, 176);
+}
+.cal{
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+}
+.goal{
+  font-size: 0.9rem;
+  color: rgb(176, 176, 176);
+text-align: center;
+}
+.cal2{
+  border-top: 0.5px solid rgba(177, 176, 176, 0.731);
+  border-radius: 5px;
+}
+
+@media (max-width:1165px) {
+  .secondmain{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .number{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .forthmain{
+    margin-top: 10px;
+  }
+}

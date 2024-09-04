@@ -1,0 +1,121 @@
+ // studentid:req.body.studentid,
+        // firstname:req.body.firstname,
+        // lastname:req.body.lastname,
+        // fathername:req.body.fathername,
+        // mothername:req.body.mothername,
+        // dateofbirth:req.body.dateofbirth,
+        // emailid:req.body.emailid,
+        // address:req.body.address,
+        // contactnumber:req.body.contactnumber,
+        // alternatenumber:req.body.alternatenumber,
+        // gender:req.body.gender,
+        // martialstatus:req.body.martialstatus,
+        // qualification:req.body.qualification,
+        // workexperience:req.body.workexperience,
+        // course:req.body.course,
+        // totalamount:req.body.totalamount,
+        // remainingamount:req.body.remainingamount,
+        // mentor:req.body.mentor,
+        // dateofjoining:req.body.dateofjoining,
+        // studentstatus:req.body.studentstatus,
+        // studentimage:req.body.studentimage,
+        // remarks:req.body.remarks
+
+
+
+
+
+
+
+         <div className="d-flex justify-content-center align-items-center  vh-100 bgc  ">
+
+<div className="log p-3 rounded ">
+  <p className="h2 mb-3 in text-center">Sign in</p>
+  <form onSubmit={handleSubmit} >
+
+ <FloatingLabel
+        controlId="floatingInput"
+        label="Email"
+        className="mb-4 mt-4"
+     
+      >
+        <Form.Control type="Email" placeholder="Email" name='email' />
+      </FloatingLabel>
+
+      <FloatingLabel controlId="floatingPassword" label="Password" >
+        <Form.Control type="password" placeholder="Password" name='password'/>
+      </FloatingLabel>
+
+
+<p className='text-center mt-4'>Forget your password ?</p>
+<Link to='../register' className=' mt-3'> <p className="text-center">Create An Account</p></Link>
+
+<Link to='../dashboard'  className="bigbtn  text-center mt-4 ">
+  <button className="btn2 ">
+     Sign Up
+  </button>
+
+</Link>
+  </form>
+</div>
+
+</div>
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box;
+ 
+}
+.bgc{
+    background-color: whitesmoke;
+
+}
+.btn2{
+    border: 2px solid black ;
+    border-radius: 60px;
+    padding: 8px 35px 8px 35px;
+   font-weight: 500;
+   font-size: 1.1rem;
+   background-color: rgba(5, 84, 255, 0.751);
+    color: white;
+ 
+}
+.log{
+   width:35%;
+    background-color: #fff;
+}
+
+.bigbtn{
+    display: flex;
+justify-content: center;
+}
+@media (max-width:500px) {
+.log{
+    min-width: 90%;
+}
+}
+
+ @media (max-width:800px) {
+    .log{
+        width: 70%;
+    }
+}
+
+@media (max-width:1000px) {
+    .log{
+        width: 50%;
+    }
+} 
