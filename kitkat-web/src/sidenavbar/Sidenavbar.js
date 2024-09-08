@@ -219,16 +219,16 @@ setCustomerDrop(!customerDrop)
 
 <div id='drop6' className={receiptDrop?"receiptDropOpen":""}>
 
-<div className="student3">
+<Link to='../studentCashin' className="student3">
 <FaList  className='user'/>
 <p className="info m-0">Cash-In</p>
-</div>
+</Link>
 <hr />
 
-<div className="student3">
+<Link to='../cashout' className="student3">
 <FaList  className='user'/>
 <p className="info m-0">Cash-Out</p>
-</div>
+</Link>
 <hr />
 
 </div>
@@ -274,10 +274,10 @@ setCustomerDrop(!customerDrop)
 </div>
 <hr />
 <div id='drop8' className={reportDrop?"reportDropOpen":""}>
-<div className="student3">
+<Link to='../reports' className="student3">
 <FaList  className='user'/>
 <p className="info m-0">Manage reports</p>
-</div>
+</Link>
 <hr />
 </div>
 
@@ -292,16 +292,16 @@ setCustomerDrop(!customerDrop)
 
 <div id='drop9' className={billDrop?"billDropOpen":""}>
 
-<div className="student3">
+<Link to='../billing' className="student3">
 <MdAttachMoney  className='user'/>
 <p className="info m-0">GST</p>
-</div>
+</Link>
 <hr />
 
-<div className="student3">
+<Link to='../billing2'  className="student3">
 <MdOutlineMoneyOffCsred  className='user'/>
 <p className="info m-0">Non-GST</p>
-</div>
+</Link>
 <hr />
 
 </div>
@@ -318,10 +318,10 @@ setCustomerDrop(!customerDrop)
 <hr />
 <div id='drop10' className={masterDrop?"masterDropOpen":""}>
 
-<div className="student3">
+<Link to='../setinvoiceno' className="student3">
 <FaIdCardClip  className='user'/>
 <p className="info m-0">Invoice No</p>
-</div>
+</Link>
 <hr />
 
 <div className="student3">

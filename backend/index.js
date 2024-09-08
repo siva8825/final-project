@@ -9,6 +9,9 @@ const VendorModel =require("./VendorSchema")
 const IntertviewModel=require("./InterviewSchema")
 const LeadsModel =require("./LeadsSchema")
 const SignInModel =require("./Signin")
+const StudentcashinModel = require("./StudentCashinSchema")
+const CustomercashinModel =require("./CustCashinSchema")
+const SetInvoiceModel = require("./SetInvoiceSchema")
 const multer =require("multer")
 
 const app = express()
@@ -284,6 +287,83 @@ app.delete('/deleteLeads/:id', (req,res)=>{
 })
 
 
+
+
+//studentcashin
+app.post("/studentcashin",(req , res)=>{
+    StudentcashinModel.create(req.body)
+    .then(studentcashin => res.json(studentcashin))
+    .catch(err => res.json(err))
+})
+app.get('/studentcashin',(req,res)=>{
+    StudentcashinModel.find({})
+    .then(studentcashin => res.json(studentcashin))
+    .catch(err => res.json(err))
+})
+app.get('/getstudentcashin/:id',(req,res)=>{
+    const id = req.params.id
+    StudentcashinModel.findById({_id:id})
+    .then(studentcashin => res.json(studentcashin))
+    .catch(err => res.json(err)) 
+})
+app.put('/updatecashinstu/:id',(req,res)=>{
+    StudentcashinModel.findByIdAndUpdate(req.params.id,{$set:req.body},{new:true})
+    .then(studentcashin => res.json(studentcashin))
+    .catch(err => res.json(err))
+})
+app.delete('/deletestudentcashin/:id', (req,res)=>{
+    const id =req.params.id
+    StudentcashinModel.findByIdAndDelete({_id:id})
+    .then(res => res.json(res))
+    .catch(err => res.json(err))
+})
+
+
+
+
+//customercashin
+app.post("/customercashin",(req , res)=>{
+    CustomercashinModel.create(req.body)
+    .then(customercashin => res.json(customercashin))
+    .catch(err => res.json(err))
+})
+app.get('/customercashin',(req,res)=>{
+    CustomercashinModel.find({})
+    .then(customercashin => res.json(customercashin))
+    .catch(err => res.json(err))
+})
+app.get('/getcustomercashin/:id',(req,res)=>{
+    const id = req.params.id
+    CustomercashinModel.findById({_id:id})
+    .then(customercashin => res.json(customercashin))
+    .catch(err => res.json(err)) 
+})
+app.put('/updatecashincust/:id',(req,res)=>{
+    CustomercashinModel.findByIdAndUpdate(req.params.id,{$set:req.body},{new:true})
+    .then(customercashin => res.json(customercashin))
+    .catch(err => res.json(err))
+})
+app.delete('/deletecustomercashin/:id', (req,res)=>{
+    const id =req.params.id
+    CustomercashinModel.findByIdAndDelete({_id:id})
+    .then(res => res.json(res))
+    .catch(err => res.json(err))
+})
+
+
+
+//SetInvoice Id
+
+app.post("/setinvoice",(req,res)=>{
+    SetInvoiceModel.create(req.body)
+    .then(setinvoice => res.json(setinvoice))
+    .catch(err => res.json(err))
+})
+app.get('/setinvoice',(req,res)=>{
+    SetInvoiceModel.find({})
+    .then(setinvoice => res.json(setinvoice))
+    .catch(err => res.json(err))
+})
 
 
 

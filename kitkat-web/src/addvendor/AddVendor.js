@@ -61,10 +61,10 @@ const navigate = useNavigate()
 <br />
 <br />
 
-<Container fluid className='Add'>
+<Container fluid className='Add ' >
 
 <div className="firstbox mt-3">
-    <Link  to='../employeelist' className="bigbtn text-center "><button className="btn5 "><FaUsers/>Vendor List</button></Link>
+    <Link  to='../vendorlist' className="bigbtn text-center "><button className="btn5 "><FaUsers/>Vendor List</button></Link>
     <Link className='bigbtn'><h3 className="reg m-0 ">Register Vendor</h3></Link>
     <Link className='bigbtn'>   <p className='tex m-0'>Vendor > Add Vendor</p></Link>
     </div>

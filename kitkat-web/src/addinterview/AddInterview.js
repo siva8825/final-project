@@ -15,7 +15,7 @@ const AddInterview = () => {
   const [values,setValues]=useState({
     investigateddate:"",
     contactnumber:"",
-    emailid:"",
+    email:"",
     location:"",
     qualification:"",
     scheduleddate:"",
@@ -88,7 +88,7 @@ const navigate = useNavigate()
 
         <div className="stuId mt-5">
             <p className='stu'>Email Id: <span className='star'>*</span></p>
-<Form.Control type="email" placeholder="" required  className='control2' name='emailid' onChange={(e)=>handleChange(e)} />
+<Form.Control type="email" placeholder="" required  className='control2' name='email' onChange={(e)=>handleChange(e)} />
 
         </div>
 

@@ -26,6 +26,17 @@ import UpdateInterview from './updateInterview/UpdateInterview';
 import UpdateLeads from './updateLeads/UpdateLeads';
 import Login from './login/Login';
 import Register from './register/Register';
+import ManageReports from './reports/ManageReports';
+import Gst from './receipt/Gst';
+import NonGst from './reacipt2/NonGst';
+import StudentCashin from './studentCashin/StudentCashin';
+import CustomerCashin from './customerCashin/CustomerCashin';
+import StucashinList from './stucashinlist/StucashinList';
+import UpdatestuCashin from './updatestucashin/UpdatestuCashin';
+import CustcashinList from './custcashinlist/CustcashinList';
+import UpdateCusCashin from './updatecuscashin/UpdateCusCashin';
+import CashOut from './cashout/CashOut';
+import SetInvoice from './setinvoiceno/SetInvoice';
 
 
 function App() {
@@ -57,6 +68,17 @@ function App() {
 <Route path='updatevendor/:id' element={<UpdateVendor/>}/>
 <Route path='updateinterview/:id' element={<UpdateInterview/>}/>
 <Route path='updateleads/:id' element={<UpdateLeads/>}/>
+<Route path='reports' element={<ManageReports/>}/>
+<Route path='billing' element={<Gst/>}/>
+<Route path='billing2' element={<NonGst/>}/>
+<Route path='studentcashin' element={<StudentCashin/>}/>
+<Route path='customercashin' element={<CustomerCashin/>}/>
+<Route path='stucashinlist' element={<StucashinList/>}/>
+<Route path='updatestucashin/:id' element={<UpdatestuCashin/>}/>
+<Route path='custcashinlist' element={<CustcashinList/>}/>
+<Route path='updatecuscashin/:id' element={<UpdateCusCashin/>}/>
+<Route path='cashout' element={<CashOut/>}/>
+<Route path='setinvoiceno' element={<SetInvoice/>}/>
 
 </Routes>
 

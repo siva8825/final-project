@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Sidenavbar from '../sidenavbar/Sidenavbar'
 import {Container,Row,Col} from 'react-bootstrap'
 import Navbar from '../navbar/Navbar'
@@ -21,7 +21,13 @@ const AddCustomer = () => {
     invoiceno:""
 })
 
+const [data,setData] = useState([])
 
+useEffect(()=>{
+axios.get('http://localhost:3001/setinvoice')
+.then(result=>setData(result.data))
+.catch(err => console.log(err))
+},[])
 
 const navigate = useNavigate()
 
@@ -129,11 +135,16 @@ const navigate = useNavigate()
 
         </div>
 
-        <div className="stuId mt-5">
+
+          
+            <div className="stuId mt-5" >
             <p className='stu'>Invoice No: <span className='star'>*</span></p>
-<Form.Control type="string" required placeholder=""  className='control2' name='invoiceno' onChange={(e)=>handleChange(e)} />
+<Form.Control type="string" required placeholder=""  className='control2' value={data.invoiceno} name='invoiceno' onChange={(e)=>handleChange(e)} />
 
         </div>
+       
+
+  
 
 
       

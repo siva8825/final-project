@@ -222,7 +222,7 @@ return (
 
         <div className="stuId mt-5">
             <p className='stu'>Work Experience: </p>
-<Form.Control type="text" placeholder=""  className='control2' name='workexperience' value={values.martialstatus} onChange={(e)=>handleChange(e)}/>
+<Form.Control type="text" placeholder=""  className='control2' name='workexperience' value={values.workexperience} onChange={(e)=>handleChange(e)}/>
 
         </div>
 

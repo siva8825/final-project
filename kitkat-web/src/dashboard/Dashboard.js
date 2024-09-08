@@ -102,7 +102,7 @@ const Dashboard = () => {
 </div>
 
 
-    <div className="result-calendar mt-5 cal2">
+    <div className="result-calendar mt-2 cal2">
             <Calendar onChange={onChange} value={calDate} />
         </div>
     </div>

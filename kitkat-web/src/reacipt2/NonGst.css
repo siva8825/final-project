@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box;
+
+}
+.inName{
+    color: green;
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.insubname{
+    color: green;
+    font-size: 2rem;
+    font-weight:500;
+}
+.address{
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color:lightgrey;
+    padding: 10px;
+}
+
+.invoicebox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cont{
+    width: 300px;
+}
+.side1{
+    background-color: lightgray;
+    padding: 10px;
+    min-width:488px;
+}
+.side2{
+    display: flex;
+    justify-content: space-around;
+}
+.secrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.insub{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.otherin2{
+    background-color: lightgrey;
+font-size: 1.1rem;
+}

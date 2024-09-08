@@ -10,7 +10,7 @@ const Login = () => {
     const navigate = useNavigate()
     const handleSubmit =(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3001/login',{email, password})
+        axios.post('http://localhost:3001/login',{email,password})
         .then(result =>{console.log(result)
   
   if(result.data==="success"){
@@ -35,7 +35,7 @@ const Login = () => {
 
     
     <div className="mb-3 mt-3">
-      <label htmlFor="email"><strong>Email</strong></label>
+      <label htmlFor="username"><strong>Email</strong></label>
       <input type="email" placeholder='Enter Email' autoComplete='off' name='email' required className='form-control rounded-0' 
      onChange={(e)=>setEmail(e.target.value)}
       />
